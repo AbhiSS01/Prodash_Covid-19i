@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>COVID-19 Cases in India</title>
+     <meta name="description" content="It's a web application for displaying the covid-19 reports of India">
+     <link rel="shortcut icon" href="./new_covid.svg">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+
+            <a href="#" class="logo">
+              <img src="./Props/corona.png" width="153" height="67" alt="Covid-19 home">
+            </a>
+      
+            <nav class="navbar" data-navbar>
+              <ul class="navbar-list">
+      
+                <li class="navbar-item">
+                  <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                </li>
+      
+                <li class="navbar-item">
+                  <a href="#report" class="navbar-link" data-nav-link>Report</a>
+                </li>
+      
+                <li class="navbar-item">
+                  <a href="#prevention" class="navbar-link" data-nav-link>Prevention</a>
+                </li>
+      
+                <li class="navbar-item">
+                  <a href="#" class="navbar-link" data-nav-link>Shop</a>
+                </li>
+      
+                <li class="navbar-item">
+                  <a href="#about" class="navbar-link" data-nav-link>About</a>
+                </li>
+      
+              </ul>
+            </nav>
+      
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+              <ion-icon name="menu-outline" aria-hidden="true" class="menu"></ion-icon>
+              <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+            </button>
+      
+            <a   class="btn btn-primary">Ask Abhijit</a>
+      
+          </div>
+
+    </header>
+    <div class="info" id="home">
+      <div class="corona one">
+        <p>Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.
+          <br>
+          Most people infected with the virus will experience mild to moderate respiratory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention. Older people and those with underlying medical conditions like cardiovascular disease, diabetes, chronic respiratory disease, or cancer are more likely to develop serious illness. Anyone can get sick with COVID-19 and become seriously ill or die at any age. 
+          <br>
+          The best way to prevent and slow down transmission is to be well informed about the disease and how the virus spreads. Protect yourself and others from infection by staying at least 1 metre apart from others, wearing a properly fitted mask, and washing your hands or using an alcohol-based rub frequently. Get vaccinated when it’s your turn and follow local guidance.
+          <br>
+          The virus can spread from an infected person’s mouth or nose in small liquid particles when they cough, sneeze, speak, sing or breathe. These particles range from larger respiratory droplets to smaller aerosols. It is important to practice respiratory etiquette, for example by coughing into a flexed elbow, and to stay home and self-isolate until you recover if you feel unwell.</p>
+      </div>
+    </div>
+    <div class="container rep" id="report">
+      <h1>COVID-19 Cases in India</h1>
+      <div class="corona-box">
+          <div class="corona"></div>
+      </div>
+      <form action="#" method="post" id="stateDistrictForm">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="district">District:</label>
+        <input type="text" id="district" name="district" required>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="result" style="color: black;"></div>
+    </div>
+  <!-- <label for="stateInput">Enter State Name:</label>
+      <input type="text" id="stateInput" placeholder="Enter state name">
+      <button onclick="fetchData()">Get Total Cases</button>
+      <div id="totalCases"></div>
+      <h2>State and District Information</h2> -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="prevention" id="prevention">
+    <h3 style="color: red;"><b>Prevention</b></h3>
+    <p>The first and foremost thing for coronavirus prevention is that everyone must do is get the vaccine as soon as it is their turn. It helps you avoid the virus or prevent you from falling seriously ill.  Apart from this, we must not forget to take other steps as well to reduce the risk of getting the virus.
+      It includes avoiding close contact with people who are sick or are showing symptoms. Make sure you are at least 6 feet away from them. Similarly, you also remain at the same distance as others if you have contracted the virus.
+      What’s important to know is that you may have COVID-19 and spread it to others even if you are not showing any symptoms or aren’t aware that you have COVID-19. Moreover, we must avoid crowds and indoor places that are not well-ventilated.      
+      Most importantly, keep washing your hands frequently with soap and water. If these are not present, carry an alcohol-based sanitiser with you. It must have a minimum amount of 60% alcohol.     
+      In addition, wearing a face mask is of utmost importance in public spaces. Such places come with a higher risk of transmission of the virus. Thus, use surgical masks if they are available.     
+      It is important to cover your mouth and nose when you are coughing or sneezing. If you don’t have a tissue, cover it with your elbow. Do not touch your eyes, nose and mouth. Likewise, do not share dishes, towels, glasses and other household items with a sick person.     
+      Do not forget to clean and disinfect surfaces that people touch frequently like electronics, switchboards, counters, doorknobs, and more. Also, stay at home if you feel sick and do not take public transport as well.</p>
+  </div>
+  <footer class="site-footer">
+    <div class="container" id="about">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Ministry of Health and Family Welfare has the following two attached Offices :-
+            <br>
+            (i) Directorate General of Health Services (DGHS) is an attached office of the Department of Health & Family welfare and has subordinate offices spread all over the country. The DGHS renders technical advice on all Medical and Public Health matters and is involved in the implementation of various Health Services.
+            <br>
+            (ii) National Health Authority (NHA) has been set up as an attached Office to Ministry of Health & Family welfare vide extraordin ary Gazette Notification no. 3(4)12018- H&FW (Part.III) Vol.2 dated 01.02.2019 of NITI Aayog. NHA is the apex body responsible for implementing India's flagship public health insurance/assurance scheme called "Ayushman Bharat- Pradhan Mantri Jan Arogya Yojana" & has been entrusted with the role of designing strategy, building technological infrastructure and implementation of "National Digital Health Mission" to create a National Digital Health Eco-system.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="https://www.india.gov.in/spotlight/ayushman-bharat-national-health-protection-mission">About Us</a></li>
+            <li><a href="https://main.mohfw.gov.in/?q=contactus/department-health-and-family-welfare-directory">Contact Us</a></li>
+            <li><a href="https://odisha.gov.in/contacts/emergency">Helpline</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="#">Government of India</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.facebook.com/MoHFWIndia/"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/MoHFW_INDIA"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="Instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
